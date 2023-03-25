@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="Jenshin, Jenshin Impekz, Open World, Anime, RPG"
+    />
+    <title>Jenshin Impekz - Open World Anime RPG</title>
+    <link rel="stylesheet" href="register.css" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;600;700&display=swap"
+    />
+
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.3.0/css/all.min.css"
+    />
+  </head>
+
+  <body>
+    <!-- Header -->
+    <header>
+      <nav id="navbar">
+        <a href="../home-page/home.html">
+          <img src="https://github.com/danielcs4real/Jenshin-Impekz/blob/main/assets/logo-putih.png?raw=true" alt="Jenshin Impekz Logo" />
+        </a>
+        <div id="nav-items">
+          <i class="fa-solid fa-xmark" onclick="hide()"></i>
+          <ul>
+            <li><a href="../home-page/home.html" class="nav-item">Home</a></li>
+            <li><a href="../character-page/character.html" class="nav-item">Characters</a></li>
+            <li><a href="../map-page/map.html" class="nav-item">Maps</a></li>
+            <li><a href="../register-page/register.html" class="nav-item">Register Now</a></li>
+            <li><a href="../about-page/about.html" class="nav-item">About Us</a></li>
+            <li><a href="#" class="hero-btn">Download Now</a></li>
+          </ul>
+        </div>
+        <i class="fa-solid fa-bars" onclick="show()"></i>
+      </nav>
+
+      <div class="container">
+        <h1>Start Your Adventure Now!</h1>
+
+        <form id="form" action="/">
+          <h2>Registration</h2>
+          <div class="input-list">
+            <div class="inputs">
+              <label for="username">Username</label>
+              <input id="username" name="username" type="text" />
+              <div class="error" id="error-username"></div>
+            </div>
+
+            <div class="inputs">
+              <label for="email">Email</label>
+              <input id="email" name="email" type="text" />
+              <div class="error" id="error-email"></div>
+            </div>
+
+            <div class="inputs">
+              <label for="age">Age</label>
+              <input id="age" name="age" type="number" />
+              <div class="error" id="error-age"></div>
+            </div>
+
+            <div class="inputs">
+              <label for="password">Password</label>
+              <input id="password" name="password" type="password" />
+              <div class="error" id="error-password"></div>
+            </div>
+
+            <div class="inputs">
+              <label for="password2">Re-Enter Password</label>
+              <input id="password2" name="password2" type="password" />
+              <div class="error" id="error-password2"></div>
+            </div>
+
+            <div class="inputs" id="input-tnc">
+              <label for="tnc">
+                I have read and agree to the terms and conditions.</label
+              >
+              <input id="tnc" name="tnc" type="checkbox" value="yes" />
+              <div class="error" id="error-tnc"></div>
+            </div>
+          </div>
+          <div class="button">
+            <button id="button-submit" type="submit">Submit</button>
+          </div>
+        </form>
+      </div>
+    </header>
+
+    <!-- Footer -->
+    <footer>
+      <div class="logo">
+        <a href="home.html">
+          <img src="https://github.com/danielcs4real/Jenshin-Impekz/blob/main/assets/logo-putih.png?raw=true" alt="Jenshin Impekz Logo" />
+        </a>
+      </div>
+
+      <div class="link">
+        <a href="../about-page/about.html">About Us</a>
+      </div>
+
+      <div class="rating">
+        <img src="https://github.com/danielcs4real/Jenshin-Impekz/blob/main/assets/r-rating.png?raw=true" alt="T-Rating" />
+      </div>
+
+      <div class="icons">
+        <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-twitter"></i>
+        <i class="fa-brands fa-instagram"></i>
+        <i class="fa-brands fa-discord"></i>
+      </div>
+
+      <div class="copyright">
+        <p>Copyright &copy; D&amp;S. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
+
+  <script src="register.js"></script>
+</html>
